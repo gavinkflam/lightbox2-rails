@@ -14,6 +14,6 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'railties', '>= 3.1'
 
-  s.files = Dir['{lib,public,vendor}/**/*', 'LICENSE', 'README.md']
+  s.files = Dir['{lib,vendor}/**/*', 'LICENSE', 'README.md']
   s.require_path = 'lib'
 end

@@ -12,6 +12,11 @@ Add to your `Gemfile` and install with bundler:
 gem 'lightbox2-rails'
 ```
 
+Add to your `config/initializers/assets.rb` in order to have the images for lightbox precompiled:
+```ruby
+Rails.application.config.assets.precompile += %w( lightbox/* )
+```
+
 Require the Lightbox2 javascript file in `app/assets/javascripts/application.js`:
 
 ```js

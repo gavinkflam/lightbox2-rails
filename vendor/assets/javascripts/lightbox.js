@@ -403,7 +403,7 @@
 
   })();
 
-  $(function() {
+  $(document).on('page:load ready', function() {
     var options  = new LightboxOptions();
     var lightbox = new Lightbox(options);
   });
