@@ -2,6 +2,8 @@
 
 [Lightbox2](http://lokeshdhakar.com/projects/lightbox2) for Rails asset pipeline
 
+Lightbox2 version: 2.7.1
+
 ## Installation
 
 Add to your `Gemfile` and install with bundler:

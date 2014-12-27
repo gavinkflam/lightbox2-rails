@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.description = s.summary
   s.license     = 'MIT'
 
-  s.add_dependency 'railties', '~> 3.1'
+  s.add_dependency 'railties', '>= 3.1'
 
   s.files = Dir['{lib,vendor}/**/*', 'LICENSE', 'README.md']
   s.require_path = 'lib'
