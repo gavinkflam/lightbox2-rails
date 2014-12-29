@@ -1,36 +1,60 @@
-# lightbox2-rails
+# :stars: lightbox2-rails
+
+[![Gem Version](https://badge.fury.io/rb/lightbox2-rails.svg)](http://badge.fury.io/rb/lightbox2-rails)
 
 [Lightbox2](http://lokeshdhakar.com/projects/lightbox2) for Rails asset pipeline
 
-Lightbox2 version: 2.7.1
+- Modified for [Turbolinks](https://github.com/rails/turbolinks) and [Sprockets](https://github.com/sstephenson/sprockets)' asset digests compatibility
+
+- Lightbox2 version: [2.7.1](https://github.com/lokesh/lightbox2/releases/tag/2.7.1)
 
 ## Installation
 
-Add to your `Gemfile` and install with bundler:
+1. Add to your `Gemfile` and install with bundler:
 
-```ruby
-gem 'lightbox2-rails'
-```
+  ```ruby
+  gem 'lightbox2-rails'
+  ```
+  
+  ```bash
+  bundle install
+  ```
 
-Add to your `config/initializers/assets.rb` in order to have the images for lightbox precompiled:
-```ruby
-Rails.application.config.assets.precompile += %w( lightbox/* )
-```
+2. Add to your `config/initializers/assets.rb` in order to have the images for lightbox precompiled:
 
-Require the Lightbox2 javascript file in `app/assets/javascripts/application.js`:
+  ```ruby
+  Rails.application.config.assets.precompile += %w( lightbox/* )
+  ```
 
-```js
-//= require lightbox
-```
+3. Require the modified Lightbox2 javascript file in `app/assets/javascripts/application.js`:
 
-Require the modified Lightbox2 css file in `app/assets/stylesheets/application.css`:
+  ```js
+  //= require lightbox
+  ```
+  
+  Or in `app/assets/javascripts/application.js.coffee`:
+  
+  ```coffeescript
+  #= require lightbox
+  ```
 
-```css
-*= require lightbox
-```
+4. Require the modified Lightbox2 css file in `app/assets/stylesheets/application.css`:
+  
+  ```css
+  *= require lightbox
+  ```
+  Or in `app/assets/javascripts/application.css.scss` / `app/assets/javascripts/application.css.sass`:
+  
+  ```scss
+  @import lightbox;
+  ```
+  
+  ```sass
+  @import lightbox
+  ```
 
 ## Acknowledgements
 
 [Lightbox2](http://lokeshdhakar.com/projects/lightbox2) created by Lokesh Dhakar, licensed under the [Creative Commons Attribution 2.5 License](http://creativecommons.org/licenses/by/2.5/)
 
-Copyright [Gavin Lam](http://gavin.hk), released under the MIT License.
+Copyright [Gavin Lam](https://www.gavin.hk), released under the MIT License.
