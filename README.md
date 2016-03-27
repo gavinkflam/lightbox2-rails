@@ -54,6 +54,10 @@
   @import lightbox
   ```
 
+5. Changing default options (Optional)
+
+  Please refer to [Lightbox2 project page](http://lokeshdhakar.com/projects/lightbox2/#options).
+
 ## Acknowledgements
 
 [Lightbox2](http://lokeshdhakar.com/projects/lightbox2) created by Lokesh Dhakar, licensed under the [Creative Commons Attribution 2.5 License](http://creativecommons.org/licenses/by/2.5/)
