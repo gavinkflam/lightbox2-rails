@@ -47,7 +47,7 @@
   Or in `app/assets/javascripts/application.css.scss` / `app/assets/javascripts/application.css.sass`:
   
   ```scss
-  @import lightbox;
+  @import 'lightbox';
   ```
   
   ```sass
