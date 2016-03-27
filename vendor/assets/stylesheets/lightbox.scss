@@ -1,7 +1,11 @@
 /* Preload images */
 body:after {
-  content: url(image_path('lightbox/close.png')) url(image_path('lightbox/loading.gif')) url(image_path('lightbox/prev.png')) url(image_path('lightbox/next.png'));
+  content: url(image_path('/close.png')) url(image_path('/loading.gif')) url(image_path('/prev.png')) url(image_path('/next.png'));
   display: none;
+}
+
+body.lb-disable-scrolling {
+  overflow: hidden;
 }
 
 .lightboxOverlay {
@@ -29,10 +33,6 @@ body:after {
   display: block;
   height: auto;
   max-width: inherit;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
   border-radius: 3px;
 }
 
@@ -47,10 +47,6 @@ body:after {
   width: 250px;
   height: 250px;
   margin: 0 auto;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
   border-radius: 4px;
 }
 
@@ -79,7 +75,7 @@ body:after {
   width: 32px;
   height: 32px;
   margin: 0 auto;
-  background: url(image_path('lightbox/loading.gif')) no-repeat;
+  background: url(image_path('/loading.gif')) no-repeat;
 }
 
 .lb-nav {
@@ -110,7 +106,7 @@ body:after {
   width: 34%;
   left: 0;
   float: left;
-  background: url(image_path('lightbox/prev.png')) left 48% no-repeat;
+  background: url(image_path('/prev.png')) left 48% no-repeat;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -webkit-transition: opacity 0.6s;
@@ -128,7 +124,7 @@ body:after {
   width: 64%;
   right: 0;
   float: right;
-  background: url(image_path('lightbox/next.png')) right 48% no-repeat;
+  background: url(image_path('/next.png')) right 48% no-repeat;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -webkit-transition: opacity 0.6s;
@@ -192,7 +188,7 @@ body:after {
   float: right;
   width: 30px;
   height: 30px;
-  background: url(image_path('lightbox/close.png')) top right no-repeat;
+  background: url(image_path('/close.png')) top right no-repeat;
   text-align: right;
   outline: none;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
