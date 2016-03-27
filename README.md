@@ -1,6 +1,7 @@
 # :stars: lightbox2-rails
 
-[![Gem Version](https://badge.fury.io/rb/lightbox2-rails.svg)](http://badge.fury.io/rb/lightbox2-rails)
+[![Gem Version](http://img.shields.io/gem/v/lightbox2-rails.svg)](https://rubygems.org/gems/lightbox2-rails)
+[![Gem Downloads](https://img.shields.io/gem/dt/lightbox2-rails.svg)](https://rubygems.org/gems/lightbox2-rails)
 
 [Lightbox2](http://lokeshdhakar.com/projects/lightbox2) for Rails asset pipeline
 
