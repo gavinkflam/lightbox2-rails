@@ -1,5 +1,5 @@
 module Lightbox2
   module Rails
-    VERSION = '2.8.2.1'
+    VERSION = '2.9.0'
   end
 end
