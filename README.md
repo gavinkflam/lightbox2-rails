@@ -6,8 +6,7 @@
 [Lightbox2](http://lokeshdhakar.com/projects/lightbox2) for Rails asset pipeline
 
 - Modified for [Turbolinks](https://github.com/rails/turbolinks) and [Sprockets](https://github.com/sstephenson/sprockets)' asset digests compatibility
-
-- Lightbox2 version: [2.8.2](https://github.com/lokesh/lightbox2/releases/tag/v2.8.2)
+- Lightbox2 version: [2.10.0](https://github.com/lokesh/lightbox2/releases/tag/v2.10.0)
 
 ## Installation
 
@@ -16,7 +15,7 @@
   ```ruby
   gem 'lightbox2-rails'
   ```
-  
+
   ```bash
   bundle install
   ```
@@ -32,24 +31,24 @@
   ```js
   //= require lightbox
   ```
-  
+
   Or in `app/assets/javascripts/application.js.coffee`:
-  
+
   ```coffeescript
   #= require lightbox
   ```
 
 4. Require the modified Lightbox2 css file in `app/assets/stylesheets/application.css`:
-  
+
   ```css
   *= require lightbox
   ```
   Or in `app/assets/javascripts/application.css.scss` / `app/assets/javascripts/application.css.sass`:
-  
+
   ```scss
   @import 'lightbox';
   ```
-  
+
   ```sass
   @import lightbox
   ```
