@@ -1,0 +1,9 @@
+source 'https://rubygems.org'
+
+gem 'jquery-rails', '~> 4.3.3'
+gem 'rails', '~> 4.2.10'
+gem 'sass', '~> 3.5.6'
+
+gem 'teaspoon-jasmine', '~> 2.3.4'
+
+gemspec path: '../../'
