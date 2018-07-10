@@ -8,6 +8,7 @@ require "sprockets/railtie"
 
 require "jquery-rails"
 require "lightbox2-rails"
+require "teaspoon-jasmine"
 
 module DummyApp
   class Application < Rails::Application
